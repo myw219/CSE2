@@ -33,5 +33,6 @@ public class Cyclometer {
 	System.out.println("Trip 2 was "+distancetrip2+" miles");
 	System.out.println("The total distance was "+totalDistance+" miles");
 
-	}  //end of main method   
+	}  //end of main method  
+	//empty line
 } //end of class
