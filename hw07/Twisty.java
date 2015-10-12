@@ -70,9 +70,10 @@ public class Twisty
             }
         }
         
-        //width of the # pattern
+        //loops through each line
         for(int i=0; i<width; i++)
         {
+            //loops through and depending on j, determines wheither to put #, /, or \
             for(int j=0; j<length; j++)
             {
                 if( i == j%width)
