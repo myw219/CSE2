@@ -46,7 +46,7 @@ public class Twisty
                 myScanner.next(); 
             }
         }
-        System.out.print("Input your desited width: ");
+        System.out.print("Input your desired width: ");
         while(!check2)
         {
             if(myScanner.hasNextInt())
@@ -103,7 +103,7 @@ public class Twisty
                     System.out.print(" ");
                 }
             }
-            System.out.println();
+            //System.out.println();
         }
     }
 }
