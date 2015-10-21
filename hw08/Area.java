@@ -77,17 +77,4 @@ public class Area
         double input = myScanner.nextDouble();
         return input;
     }
-    
-    /*
-    circleAre = calculator(int radius);
-    rectArea = calculatro(int length, int width);
-    
-    public static double calculatro(int lenght, int width) {
-    .....rectangle radius
-    }
-    public static double calculatro(int radius) {
-        ....circle
-    }
-    */
-    
 }
