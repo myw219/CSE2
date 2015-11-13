@@ -74,7 +74,7 @@ public class CSE2Linear
         }
         System.out.print("Enter a grade to search for: ");
         int grade = myScanner.nextInt();
-        linearSearch(grade, score);
+        binarySearch(grade, score);
         scramble(score);
         System.out.print("Enter a grade to search for: ");
         grade = myScanner.nextInt();
@@ -93,6 +93,31 @@ public class CSE2Linear
             else
             {
                 continue;
+            }
+        }
+    }
+    public static void binarySearch( int grade, int[] score)
+    {
+        int min = 0;
+        int max = score.length-1;
+        int mid = (max+min)/2;
+        int difference = max - min;
+         for (int i = 0; i < score.length; i++) {
+            if (grade < score[mid - 1] && difference != 1) {
+                max = mid - 1;
+                mid = max / 2;
+            } else if (grade > score[mid - 1] && difference != 1) {
+                min = mid + 1;
+                mid = (min  + max) / 2;
+
+            } else if (grade == score[mid - 1]) {
+                mid = mid - 1;
+
+                System.out.println("We found " + grade + " with " + i + " iterations");
+                i = score.length;
+            } else {
+                System.out.println("We couldn't find " + grade + " in the list with " + i + "comparisions");
+                i = score.length;
             }
         }
     }
